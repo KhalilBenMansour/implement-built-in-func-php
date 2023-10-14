@@ -1,12 +1,11 @@
 <?php
-$strarg="12";
+$strarg="Hello";
 function khalil_strlen( string $str):int{
-    $i=0;
-    while($str[$i]!="" && $i<20){
-        echo $i;
-        $i++;
+    $count=0;
+    while($str && $str[$count]){
+        $count++;
     }
-return $i;
+return $count;
 }
 echo khalil_strlen($strarg) . "<br>";
 echo strlen($strarg) . "<br>";;
