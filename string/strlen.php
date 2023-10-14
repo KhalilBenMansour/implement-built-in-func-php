@@ -2,7 +2,7 @@
 $strarg="Hello";
 function khalil_strlen( string $str):int{
     $count=0;
-    while($str && $str[$count]){
+    while(!empty($str[$count])){
         $count++;
     }
 return $count;
